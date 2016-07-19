@@ -1,7 +1,0 @@
-public class HelloWorldTest
-{
-    @Test
-    public void testGetHelloWorld()
-    {
-    }
-}
