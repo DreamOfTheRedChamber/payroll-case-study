@@ -6,17 +6,8 @@ custom_mark
 @startuml
 object Employee 
 object PaymentMethod
-object HoldMethod
-object DirectMethod
-object MailMethod
 object PaymentClassification 
-object HourlyClassification
-object CommissionedClassification
-object SalariedClassification
 object Affiliation
-object NoAffiliation
-object UnionAffiliation
-object ServiceCharge
 
 Employee *__ PaymentClassification
 Employee *__ PaymentMethod
