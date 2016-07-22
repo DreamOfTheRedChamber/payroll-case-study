@@ -4,19 +4,22 @@
 <!---
 custom_mark
 @startuml
-object Object01
-object Object02
-object Object03
-object Object04
-object Object05
-object Object06
-object Object07
-object Object08
+object Employee 
+object PaymentMethod
+object HoldMethod
+object DirectMethod
+object MailMethod
+object PaymentClassification 
+object HourlyClassification
+object CommissionedClassification
+object SalariedClassification
+object Affiliation
+object NoAffiliation
+object UnionAffiliation
+object ServiceCharge
 
-Object01 <|-- Object02
-Object03 *-- Object04
-Object05 o-- "4" Object06
-Object07 .. Object08 : some labels
+Employee *__ PaymentClassification
+Employee *__ PaymentMethod
+Employee *__ Affiliation 
 @enduml
-custom_mark
 -->
