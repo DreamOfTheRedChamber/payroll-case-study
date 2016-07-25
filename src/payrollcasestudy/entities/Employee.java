@@ -1,3 +1,7 @@
+package payrollcasestudy.entities;
+
+import payrollcasestudy.entities.paymentmethods.PaymentMethod;
+
 /**
  * Employees: users of payroll system
  */

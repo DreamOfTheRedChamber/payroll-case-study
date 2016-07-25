@@ -1,3 +1,5 @@
+package payrollcasestudy.entities.paymentmethods;
+
 /**
  * paycheck directly mailed to postal address
  */

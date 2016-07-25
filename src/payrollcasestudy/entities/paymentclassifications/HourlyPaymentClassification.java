@@ -1,3 +1,5 @@
+package payrollcasestudy.entities.paymentclassifications;
+
 /**
  * employees paid on an hourly rate
  */
