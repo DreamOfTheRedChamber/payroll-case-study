@@ -4,6 +4,7 @@ import payrollcasestudy.entities.SalesReceipt;
 
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * employees paid based on sales receipts which record the date and amount of the sale
