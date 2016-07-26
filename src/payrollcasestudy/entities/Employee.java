@@ -1,5 +1,6 @@
 package payrollcasestudy.entities;
 
+import payrollcasestudy.entities.affiliation.UnionAffiliation;
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.entities.paymentmethods.PaymentMethod;
 import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
@@ -14,6 +15,16 @@ public class Employee {
     private PaymentClassification paymentClassification;
     private PaymentMethod paymentMethod;
     private PaymentSchedule paymentSchedule;
+
+    public UnionAffiliation getUnionAffiliation() {
+        return unionAffiliation;
+    }
+
+    public void setUnionAffiliation(UnionAffiliation unionAffiliation) {
+        this.unionAffiliation = unionAffiliation;
+    }
+
+    private UnionAffiliation unionAffiliation = UnionAffiliation.NO_AFFILIATION;
 
     public PaymentClassification getPaymentClassification() {
         return paymentClassification;
