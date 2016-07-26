@@ -16,4 +16,9 @@ public class PayrollDatabase {
     {
         employeeMap.put( employeeId, employee );
     }
+
+    public void deleteEmployee( int employeeId )
+    {
+        employeeMap.put( employeeId, null );
+    }
 }
