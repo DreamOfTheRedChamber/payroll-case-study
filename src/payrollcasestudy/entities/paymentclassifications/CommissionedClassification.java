@@ -13,4 +13,13 @@ public class CommissionedClassification extends PaymentClassification {
     private double commissionRate;
     private double salary;
     private Map<Calendar, SalesReceipt> salesReceiptMap = new HashMap<>();
+
+    public CommissionedClassification(double commissionRate, double salary) {
+        this.commissionRate = commissionRate;
+        this.salary = salary;
+    }
+
+    public void addSalesReceipt( SalesReceipt salesReceipt ) {
+        salesReceiptMap.put( salesReceipt.getDate(), salesReceipt );
+    }
 }
