@@ -1,6 +1,8 @@
 package payrollcasestudy.entities;
 
+import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.entities.paymentmethods.PaymentMethod;
+import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
  * Employees: users of payroll system
@@ -9,6 +11,26 @@ public class Employee {
     private int employeeId;
     private String name;
     private String address;
+    private PaymentClassification paymentClassification;
+    private PaymentMethod paymentMethod;
+    private PaymentSchedule paymentSchedule;
+
+    public PaymentClassification getPaymentClassification() {
+        return paymentClassification;
+    }
+
+    public void setPaymentClassification(PaymentClassification paymentClassification) {
+        this.paymentClassification = paymentClassification;
+    }
+
+    public PaymentSchedule getPaymentSchedule() {
+
+        return paymentSchedule;
+    }
+
+    public void setPaymentSchedule(PaymentSchedule paymentSchedule) {
+        this.paymentSchedule = paymentSchedule;
+    }
 
     public PaymentMethod getPaymentMethod() {
         return paymentMethod;
@@ -18,7 +40,6 @@ public class Employee {
         this.paymentMethod = paymentMethod;
     }
 
-    private PaymentMethod paymentMethod;
 
     public String getAddress() {
         return address;
