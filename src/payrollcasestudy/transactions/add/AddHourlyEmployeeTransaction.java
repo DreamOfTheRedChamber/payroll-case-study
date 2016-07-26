@@ -1,4 +1,4 @@
-package payrollcasestudy.transactions;
+package payrollcasestudy.transactions.add;
 
 import payrollcasestudy.entities.paymentclassifications.HourlyClassification;
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;

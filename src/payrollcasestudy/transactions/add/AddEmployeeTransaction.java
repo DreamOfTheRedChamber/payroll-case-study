@@ -1,10 +1,11 @@
-package payrollcasestudy.transactions;
+package payrollcasestudy.transactions.add;
 
 import payrollcasestudy.PayrollDatabase;
 import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.entities.paymentmethods.PaymentMethod;
 import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
+import payrollcasestudy.transactions.Transaction;
 
 /**
  * Created by zhangshijie on 7/25/16.

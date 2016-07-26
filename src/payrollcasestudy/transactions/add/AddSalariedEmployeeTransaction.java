@@ -1,4 +1,4 @@
-package payrollcasestudy.transactions;
+package payrollcasestudy.transactions.add;
 
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.entities.paymentclassifications.SalariedClassification;
