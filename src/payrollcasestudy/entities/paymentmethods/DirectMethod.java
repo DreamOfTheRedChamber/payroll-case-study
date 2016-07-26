@@ -6,4 +6,9 @@ package payrollcasestudy.entities.paymentmethods;
 public class DirectMethod implements PaymentMethod {
     private String bankName;
     private String accountNumber;
+
+    public DirectMethod(String bankName, String accountNumber) {
+        this.bankName = bankName;
+        this.accountNumber = accountNumber;
+    }
 }
