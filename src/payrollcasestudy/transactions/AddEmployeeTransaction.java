@@ -13,17 +13,24 @@ public abstract class AddEmployeeTransaction implements Transaction {
     private int employeeId;
     private String employeeName;
     private String employeeAddress;
+    private PaymentMethod paymentMethod;
+
+    public AddEmployeeTransaction(int employeeId, String employeeName, String employeeAddress, PaymentMethod paymentMethod) {
+        this.employeeId = employeeId;
+        this.employeeName = employeeName;
+        this.employeeAddress = employeeAddress;
+        this.paymentMethod = paymentMethod;
+    }
 
     @Override
     public void execute()
     {
-        PaymentClassification paymentClassification = getPaymentClassification();
-        PaymentSchedule paymentSchedule = getPaymentSchedule();
-        PaymentMethod paymentMethod = getPaymentMethod();
-
         Employee employee = new Employee( employeeId, employeeName, employeeAddress );
-        employee.setPaymentClassification( paymentClassification );
         employee.setPaymentMethod( paymentMethod );
+
+        PaymentClassification paymentClassification = getPaymentClassification();
+        employee.setPaymentClassification( paymentClassification );
+        PaymentSchedule paymentSchedule = getPaymentSchedule();
         employee.setPaymentSchedule( paymentSchedule );
 
         PayrollDatabase.globalPayrollDatabase.addEmployee( employeeId, employee );
@@ -31,5 +38,4 @@ public abstract class AddEmployeeTransaction implements Transaction {
 
     protected abstract PaymentSchedule getPaymentSchedule();
     protected abstract PaymentClassification getPaymentClassification();
-    protected abstract PaymentMethod getPaymentMethod();
 }
