@@ -21,4 +21,9 @@ public class PayrollDatabase {
     {
         employeeMap.put( employeeId, null );
     }
+
+    public Employee getEmployee( int employeeId )
+    {
+        return employeeMap.get( employeeId );
+    }
 }
