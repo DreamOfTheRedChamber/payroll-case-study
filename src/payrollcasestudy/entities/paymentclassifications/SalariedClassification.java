@@ -9,4 +9,11 @@ public class SalariedClassification extends PaymentClassification {
     public SalariedClassification(double salary) {
         this.salary = salary;
     }
+    
+    @Override
+    public double calculatePay(PayCheck payCheck) 
+    {
+        return salary;
+    }
+
 }
