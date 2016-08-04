@@ -11,4 +11,13 @@ public class BiWeeklyPaymentSchedule implements PaymentSchedule {
     {
         return true;
     }
+    
+    @Override
+    public Calendar getPayPeriodStartDate(Calendar payDate) 
+    {
+        Calendar payPeriodStartDate = (Calendar) payDate.clone();
+        payPeriodStartDate.add(Calendar.DAY_OF_MONTH, -13);
+        return payPeriodStartDate;
+    }
+
 }
