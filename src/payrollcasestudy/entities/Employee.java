@@ -74,4 +74,25 @@ public class Employee
         this.name = name;
         this.address = address;
     }
+    
+    public boolean isPayDate(Calendar payDate) 
+    {
+        return paymentSchedule.isPayDate(payDate);
+    }
+
+    public Calendar getPayPeriodStartDay(Calendar payDate) 
+    {
+        return paymentSchedule.getPayPeriodStartDate(payDate);
+    }
+
+    public void payDay(PayCheck payCheck) 
+    {
+        double grossPay = paymentClassification.calculatePay(payCheck);
+        double deductions = unionAffiliation.calculateDeduction(payCheck);
+        double netPay = grossPay - deductions;
+        payCheck.setGrossPay(grossPay);
+        payCheck.setDeductions(deductions);
+        payCheck.setNetPay(netPay);
+        paymentMethod.pay(payCheck);
+    }
 }
