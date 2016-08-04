@@ -1,3 +1,4 @@
+
 package payrollcasestudy.entities;
 
 import java.util.Calendar;
@@ -7,57 +8,69 @@ import java.util.Map;
 /**
  * Created by zhangshijie on 7/22/16.
  */
-public class PayCheck 
+public class PayCheck
 {
-    private double grossPay;
-    private double deductions;
-    private double netPay;
-    private Calendar payPeriodStart;
-    private Calendar payDate;
-    private Map<String, String> fields = new HashMap<String, String>();
 
-    public PayCheck(Calendar payPeriodStart, Calendar payPeriodEnd) {
-        this.payPeriodStart = payPeriodStart;
-        this.payDate = payPeriodEnd;
-    }
+	private double grossPay;
+	private double deductions;
+	private double netPay;
+	private Calendar payPeriodStart;
+	private Calendar payDate;
+	private Map<String, String> fields = new HashMap<String, String>( );
 
-    public Calendar getPayPeriodEnd() {
-        return this.payDate;
-    }
+	public PayCheck( Calendar payPeriodStart, Calendar payPeriodEnd )
+	{
+		this.payPeriodStart = payPeriodStart;
+		this.payDate = payPeriodEnd;
+	}
 
-    public double getGrossPay() {
-        return grossPay;
-    }
+	public Calendar getPayPeriodEnd( )
+	{
+		return this.payDate;
+	}
 
-    public String getField(String fieldName) {
-        return fields.get(fieldName);
-    }
+	public double getGrossPay( )
+	{
+		return grossPay;
+	}
 
-    public double getDeductions() {
-        return deductions;
-    }
+	public String getField( String fieldName )
+	{
+		return fields.get( fieldName );
+	}
 
-    public double getNetPay() {
-        return netPay;
-    }
+	public double getDeductions( )
+	{
+		return deductions;
+	}
 
-    public void setGrossPay(double grossPay) {
-        this.grossPay = grossPay;
-    }
+	public double getNetPay( )
+	{
+		return netPay;
+	}
 
-    public void setDeductions(double deductions) {
-        this.deductions = deductions;
-    }
+	public void setGrossPay( double grossPay )
+	{
+		this.grossPay = grossPay;
+	}
 
-    public void setNetPay(double netPay) {
-        this.netPay = netPay;
-    }
+	public void setDeductions( double deductions )
+	{
+		this.deductions = deductions;
+	}
 
-    public void setField(String fieldName, String value) {
-        fields.put(fieldName, value);
-    }
+	public void setNetPay( double netPay )
+	{
+		this.netPay = netPay;
+	}
 
-    public Calendar getPayPeriodStart() {
-        return payPeriodStart;
-    }
+	public void setField( String fieldName, String value )
+	{
+		fields.put( fieldName, value );
+	}
+
+	public Calendar getPayPeriodStart( )
+	{
+		return payPeriodStart;
+	}
 }

@@ -1,3 +1,4 @@
+
 package payrollcasestudy.entities;
 
 import java.util.Calendar;
@@ -5,20 +6,25 @@ import java.util.Calendar;
 /**
  * Created by zhangshijie on 7/25/16.
  */
-public class TimeCard {
-    private Calendar date;
-    private double hours;
+public class TimeCard
+{
 
-    public TimeCard(Calendar date, double hours) {
-        this.date = date;
-        this.hours = hours;
-    }
+	private Calendar date;
+	private double hours;
 
-    public Calendar getDate() {
-        return date;
-    }
+	public TimeCard( Calendar date, double hours )
+	{
+		this.date = date;
+		this.hours = hours;
+	}
 
-    public double getHours() {
-        return hours;
-    }
+	public Calendar getDate( )
+	{
+		return date;
+	}
+
+	public double getHours( )
+	{
+		return hours;
+	}
 }

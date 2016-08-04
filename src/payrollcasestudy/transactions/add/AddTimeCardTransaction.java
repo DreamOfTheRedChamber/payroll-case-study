@@ -1,3 +1,4 @@
+
 package payrollcasestudy.transactions.add;
 
 import payrollcasestudy.boundaries.PayrollDatabase;
@@ -12,29 +13,34 @@ import java.util.Calendar;
 /**
  * Created by zhangshijie on 7/25/16.
  */
-public class AddTimeCardTransaction implements Transaction 
+public class AddTimeCardTransaction implements Transaction
 {
-    private Calendar date;
-    private double hours;
-    private int employeeId;
 
-    public AddTimeCardTransaction(Calendar date, double hours, int employeeId) 
-    {
-        this.date = date;
-        this.hours = hours;
-        this.employeeId = employeeId;
-    }
+	private Calendar date;
+	private double hours;
+	private int employeeId;
 
-    @Override
-    public void execute() {
-        Employee employee = PayrollDatabase.globalPayrollDatabase.getEmployee( employeeId );
-        if ( employee != null )
-        {
-            PaymentClassification paymentClassification = employee.getPaymentClassification();
-            if ( paymentClassification instanceof HourlyClassification ) {
-                HourlyClassification classification = ( HourlyClassification ) paymentClassification;
-                classification.addTimeCard( new TimeCard( date, hours ) );
-            }
-        }
-    }
+	public AddTimeCardTransaction( Calendar date, double hours, int employeeId )
+	{
+		this.date = date;
+		this.hours = hours;
+		this.employeeId = employeeId;
+	}
+
+	@Override
+	public void execute( )
+	{
+		Employee employee = PayrollDatabase.globalPayrollDatabase
+				.getEmployee( employeeId );
+		if ( employee != null )
+		{
+			PaymentClassification paymentClassification = employee
+					.getPaymentClassification( );
+			if ( paymentClassification instanceof HourlyClassification )
+			{
+				HourlyClassification classification = (HourlyClassification) paymentClassification;
+				classification.addTimeCard( new TimeCard( date, hours ) );
+			}
+		}
+	}
 }

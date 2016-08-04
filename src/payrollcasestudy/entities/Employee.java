@@ -1,3 +1,4 @@
+
 package payrollcasestudy.entities;
 
 import java.util.Calendar;
@@ -10,91 +11,105 @@ import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 /**
  * Employees: users of payroll system
  */
-public class Employee 
+public class Employee
 {
-    private int employeeId;
-    private String name;
-    private String address;
-    private PaymentClassification paymentClassification;
-    private PaymentMethod paymentMethod;
-    private PaymentSchedule paymentSchedule;
-    private UnionAffiliation unionAffiliation = UnionAffiliation.NO_AFFILIATION;
 
-    public UnionAffiliation getUnionAffiliation() {
-        return unionAffiliation;
-    }
+	private int employeeId;
+	private String name;
+	private String address;
+	private PaymentClassification paymentClassification;
+	private PaymentMethod paymentMethod;
+	private PaymentSchedule paymentSchedule;
+	private UnionAffiliation unionAffiliation = UnionAffiliation.NO_AFFILIATION;
 
-    public void setUnionAffiliation(UnionAffiliation unionAffiliation) {
-        this.unionAffiliation = unionAffiliation;
-    }
+	public UnionAffiliation getUnionAffiliation( )
+	{
+		return unionAffiliation;
+	}
 
-    public PaymentClassification getPaymentClassification() {
-        return paymentClassification;
-    }
+	public void setUnionAffiliation( UnionAffiliation unionAffiliation )
+	{
+		this.unionAffiliation = unionAffiliation;
+	}
 
-    public void setPaymentClassification(PaymentClassification paymentClassification) {
-        this.paymentClassification = paymentClassification;
-    }
+	public PaymentClassification getPaymentClassification( )
+	{
+		return paymentClassification;
+	}
 
-    public PaymentSchedule getPaymentSchedule() {
+	public void setPaymentClassification(
+			PaymentClassification paymentClassification )
+	{
+		this.paymentClassification = paymentClassification;
+	}
 
-        return paymentSchedule;
-    }
+	public PaymentSchedule getPaymentSchedule( )
+	{
 
-    public void setPaymentSchedule(PaymentSchedule paymentSchedule) {
-        this.paymentSchedule = paymentSchedule;
-    }
+		return paymentSchedule;
+	}
 
-    public PaymentMethod getPaymentMethod() {
-        return paymentMethod;
-    }
+	public void setPaymentSchedule( PaymentSchedule paymentSchedule )
+	{
+		this.paymentSchedule = paymentSchedule;
+	}
 
-    public void setPaymentMethod(PaymentMethod paymentMethod) {
-        this.paymentMethod = paymentMethod;
-    }
+	public PaymentMethod getPaymentMethod( )
+	{
+		return paymentMethod;
+	}
 
+	public void setPaymentMethod( PaymentMethod paymentMethod )
+	{
+		this.paymentMethod = paymentMethod;
+	}
 
-    public String getAddress() {
-        return address;
-    }
+	public String getAddress( )
+	{
+		return address;
+	}
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+	public void setAddress( String address )
+	{
+		this.address = address;
+	}
 
-    public String getName() {
+	public String getName( )
+	{
 
-        return name;
-    }
+		return name;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public void setName( String name )
+	{
+		this.name = name;
+	}
 
-    public Employee(int employeeId, String name, String address) {
-        this.employeeId = employeeId;
-        this.name = name;
-        this.address = address;
-    }
-    
-    public boolean isPayDate(Calendar payDate) 
-    {
-        return paymentSchedule.isPayDate(payDate);
-    }
+	public Employee( int employeeId, String name, String address )
+	{
+		this.employeeId = employeeId;
+		this.name = name;
+		this.address = address;
+	}
 
-    public Calendar getPayPeriodStartDay(Calendar payDate) 
-    {
-        return paymentSchedule.getPayPeriodStartDate(payDate);
-    }
+	public boolean isPayDate( Calendar payDate )
+	{
+		return paymentSchedule.isPayDate( payDate );
+	}
 
-    public void payDay(PayCheck payCheck) 
-    {
-        double grossPay = paymentClassification.calculatePay(payCheck);
-        double deductions = unionAffiliation.calculateDeduction(payCheck);
-        double netPay = grossPay - deductions;
-        payCheck.setGrossPay(grossPay);
-        payCheck.setDeductions(deductions);
-        payCheck.setNetPay(netPay);
-        paymentMethod.pay(payCheck);
-    }
+	public Calendar getPayPeriodStartDay( Calendar payDate )
+	{
+		return paymentSchedule.getPayPeriodStartDate( payDate );
+	}
+
+	public void payDay( PayCheck payCheck )
+	{
+		double grossPay = paymentClassification.calculatePay( payCheck );
+		double deductions = unionAffiliation.calculateDeduction( payCheck );
+		double netPay = grossPay - deductions;
+		payCheck.setGrossPay( grossPay );
+		payCheck.setDeductions( deductions );
+		payCheck.setNetPay( netPay );
+		paymentMethod.pay( payCheck );
+	}
 }

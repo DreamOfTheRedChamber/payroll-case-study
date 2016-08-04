@@ -1,3 +1,4 @@
+
 package payrollcasestudy.transactions.add;
 
 import payrollcasestudy.boundaries.PayrollDatabase;
@@ -10,33 +11,41 @@ import payrollcasestudy.transactions.Transaction;
 /**
  * Created by zhangshijie on 7/25/16.
  */
-public abstract class AddEmployeeTransaction implements Transaction {
-    private int employeeId;
-    private String employeeName;
-    private String employeeAddress;
-    private PaymentMethod paymentMethod;
+public abstract class AddEmployeeTransaction implements Transaction
+{
 
-    public AddEmployeeTransaction(int employeeId, String employeeName, String employeeAddress, PaymentMethod paymentMethod) {
-        this.employeeId = employeeId;
-        this.employeeName = employeeName;
-        this.employeeAddress = employeeAddress;
-        this.paymentMethod = paymentMethod;
-    }
+	private int employeeId;
+	private String employeeName;
+	private String employeeAddress;
+	private PaymentMethod paymentMethod;
 
-    @Override
-    public void execute()
-    {
-        Employee employee = new Employee( employeeId, employeeName, employeeAddress );
-        employee.setPaymentMethod( paymentMethod );
+	public AddEmployeeTransaction( int employeeId, String employeeName,
+			String employeeAddress, PaymentMethod paymentMethod )
+	{
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.employeeAddress = employeeAddress;
+		this.paymentMethod = paymentMethod;
+	}
 
-        PaymentClassification paymentClassification = getPaymentClassification();
-        employee.setPaymentClassification( paymentClassification );
-        PaymentSchedule paymentSchedule = getPaymentSchedule();
-        employee.setPaymentSchedule( paymentSchedule );
+	@Override
+	public void execute( )
+	{
+		Employee employee = new Employee( employeeId,
+				employeeName,
+				employeeAddress );
+		employee.setPaymentMethod( paymentMethod );
 
-        PayrollDatabase.globalPayrollDatabase.addEmployee( employeeId, employee );
-    }
+		PaymentClassification paymentClassification = getPaymentClassification( );
+		employee.setPaymentClassification( paymentClassification );
+		PaymentSchedule paymentSchedule = getPaymentSchedule( );
+		employee.setPaymentSchedule( paymentSchedule );
 
-    protected abstract PaymentSchedule getPaymentSchedule();
-    protected abstract PaymentClassification getPaymentClassification();
+		PayrollDatabase.globalPayrollDatabase.addEmployee( employeeId,
+				employee );
+	}
+
+	protected abstract PaymentSchedule getPaymentSchedule( );
+
+	protected abstract PaymentClassification getPaymentClassification( );
 }

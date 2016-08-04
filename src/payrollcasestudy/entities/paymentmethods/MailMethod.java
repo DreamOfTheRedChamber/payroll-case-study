@@ -1,12 +1,16 @@
+
 package payrollcasestudy.entities.paymentmethods;
 
 /**
  * paycheck directly mailed to postal address
  */
-public class MailMethod implements PaymentMethod {
-   private String postalAddress;
+public class MailMethod implements PaymentMethod
+{
 
-   public MailMethod(String postalAddress) {
-      this.postalAddress = postalAddress;
-   }
+	private String postalAddress;
+
+	public MailMethod( String postalAddress )
+	{
+		this.postalAddress = postalAddress;
+	}
 }

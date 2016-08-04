@@ -1,3 +1,4 @@
+
 package payrollcasestudy.transactions.change;
 
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
@@ -8,22 +9,26 @@ import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 /**
  * Created by zhangshijie on 7/26/16.
  */
-public class ChangeSalariedTransaction extends ChangeClassificationTransaction {
+public class ChangeSalariedTransaction extends ChangeClassificationTransaction
+{
 
-    private double newSalary;
+	private double newSalary;
 
-    public ChangeSalariedTransaction(int employeeId, double newSalary) {
-        super(employeeId);
-        this.newSalary = newSalary;
-    }
+	public ChangeSalariedTransaction( int employeeId, double newSalary )
+	{
+		super( employeeId );
+		this.newSalary = newSalary;
+	}
 
-    @Override
-    PaymentClassification getNewPaymentClassification() {
-        return new SalariedClassification( newSalary );
-    }
+	@Override
+	PaymentClassification getNewPaymentClassification( )
+	{
+		return new SalariedClassification( newSalary );
+	}
 
-    @Override
-    PaymentSchedule getNewPaymentSchedule() {
-        return new MonthlyPaymentSchedule();
-    }
+	@Override
+	PaymentSchedule getNewPaymentSchedule( )
+	{
+		return new MonthlyPaymentSchedule( );
+	}
 }

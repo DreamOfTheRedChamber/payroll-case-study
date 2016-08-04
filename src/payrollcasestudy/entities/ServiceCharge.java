@@ -1,3 +1,4 @@
+
 package payrollcasestudy.entities;
 
 import java.util.Calendar;
@@ -5,20 +6,25 @@ import java.util.Calendar;
 /**
  * Created by zhangshijie on 7/25/16.
  */
-public class ServiceCharge {
-    private Calendar date;
-    private double amount;
+public class ServiceCharge
+{
 
-    public ServiceCharge(Calendar date, double amount) {
-        this.date = date;
-        this.amount = amount;
-    }
+	private Calendar date;
+	private double amount;
 
-    public Calendar getDate() {
-        return date;
-    }
+	public ServiceCharge( Calendar date, double amount )
+	{
+		this.date = date;
+		this.amount = amount;
+	}
 
-    public double getAmount() {
-        return amount;
-    }
+	public Calendar getDate( )
+	{
+		return date;
+	}
+
+	public double getAmount( )
+	{
+		return amount;
+	}
 }

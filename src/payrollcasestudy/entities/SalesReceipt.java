@@ -1,3 +1,4 @@
+
 package payrollcasestudy.entities;
 
 import java.util.Calendar;
@@ -5,20 +6,25 @@ import java.util.Calendar;
 /**
  * Created by zhangshijie on 7/25/16.
  */
-public class SalesReceipt {
-    private Calendar date;
-    private double amount;
+public class SalesReceipt
+{
 
-    public SalesReceipt(Calendar date, double amount) {
-        this.date = date;
-        this.amount = amount;
-    }
+	private Calendar date;
+	private double amount;
 
-    public Calendar getDate() {
-        return date;
-    }
+	public SalesReceipt( Calendar date, double amount )
+	{
+		this.date = date;
+		this.amount = amount;
+	}
 
-    public double getAmount() {
-        return amount;
-    }
+	public Calendar getDate( )
+	{
+		return date;
+	}
+
+	public double getAmount( )
+	{
+		return amount;
+	}
 }

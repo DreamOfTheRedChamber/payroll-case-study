@@ -1,3 +1,4 @@
+
 package payrollcasestudy.entities.affiliation;
 
 import java.util.Calendar;
@@ -9,59 +10,70 @@ import payrollcasestudy.entities.ServiceCharge;
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 
 import static payrollcasestudy.entities.paymentclassifications.PaymentClassification.isInPayPeriod;
+
 /**
  * Created by zhangshijie on 7/25/16.
  */
-public class UnionAffiliation {
-    private double dues;
-    private int memberId;
+public class UnionAffiliation
+{
 
-    private Map<Calendar, ServiceCharge> serviceChargeMap = new HashMap<>();
+	private double dues;
+	private int memberId;
 
-    public static final UnionAffiliation NO_AFFILIATION = new UnionAffiliation( -1, 0 );
+	private Map<Calendar, ServiceCharge> serviceChargeMap = new HashMap<>( );
 
-    public UnionAffiliation( int memberId, double dues ) {
-        this.memberId = memberId;
-        this.dues = dues;
-    }
+	public static final UnionAffiliation NO_AFFILIATION = new UnionAffiliation(
+			-1, 0 );
 
-    public void addServiceCharge( Calendar date, double amount ) {
-        this.serviceChargeMap.put( date, new ServiceCharge( date, amount) );
-    }
+	public UnionAffiliation( int memberId, double dues )
+	{
+		this.memberId = memberId;
+		this.dues = dues;
+	}
 
-    public double getDues() {
-        return dues;
-    }
+	public void addServiceCharge( Calendar date, double amount )
+	{
+		this.serviceChargeMap.put( date, new ServiceCharge( date, amount ) );
+	}
 
-    public int getMemberId() {
-        return memberId;
-    }
-    
-    public double calculateDeduction(PayCheck payCheck) 
-    {
-        double totalDeductions = 0;
-        totalDeductions += numberOfFridaysInPayPeriod(payCheck.getPayPeriodStart(), payCheck.getPayPeriodEnd()) * dues;
-        for (ServiceCharge serviceCharge : serviceChargeMap.values())
-        {
-            if (isInPayPeriod(serviceCharge.getDate(), payCheck))
-            {
-                totalDeductions += serviceCharge.getAmount();
-            }
-        }
-        return totalDeductions;
-    }
+	public double getDues( )
+	{
+		return dues;
+	}
 
-    private int numberOfFridaysInPayPeriod(Calendar payPeriodStart, Calendar payPeriodEnd) 
-    {
-        int numberOfFridays = 0;
-        while (!payPeriodStart.after(payPeriodEnd))
-        {
-            if (payPeriodStart.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY)
-            {
-                numberOfFridays++;
-            }
-            payPeriodStart.add(Calendar.DAY_OF_MONTH, 1);
-        }
-        return numberOfFridays;
-    }
+	public int getMemberId( )
+	{
+		return memberId;
+	}
+
+	public double calculateDeduction( PayCheck payCheck )
+	{
+		double totalDeductions = 0;
+		totalDeductions += numberOfFridaysInPayPeriod(
+				payCheck.getPayPeriodStart( ), payCheck.getPayPeriodEnd( ) )
+				* dues;
+		for ( ServiceCharge serviceCharge : serviceChargeMap.values( ) )
+		{
+			if ( isInPayPeriod( serviceCharge.getDate( ), payCheck ) )
+			{
+				totalDeductions += serviceCharge.getAmount( );
+			}
+		}
+		return totalDeductions;
+	}
+
+	private int numberOfFridaysInPayPeriod( Calendar payPeriodStart,
+			Calendar payPeriodEnd )
+	{
+		int numberOfFridays = 0;
+		while ( !payPeriodStart.after( payPeriodEnd ) )
+		{
+			if ( payPeriodStart.get( Calendar.DAY_OF_WEEK ) == Calendar.FRIDAY )
+			{
+				numberOfFridays++;
+			}
+			payPeriodStart.add( Calendar.DAY_OF_MONTH, 1 );
+		}
+		return numberOfFridays;
+	}
 }
