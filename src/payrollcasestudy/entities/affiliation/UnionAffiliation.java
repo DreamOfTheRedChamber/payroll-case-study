@@ -1,11 +1,14 @@
 package payrollcasestudy.entities.affiliation;
 
-import payrollcasestudy.entities.ServiceCharge;
-
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import payrollcasestudy.entities.PayCheck;
+import payrollcasestudy.entities.ServiceCharge;
+import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
+
+import static payrollcasestudy.entities.paymentclassifications.PaymentClassification.isInPayPeriod;
 /**
  * Created by zhangshijie on 7/25/16.
  */
@@ -38,7 +41,7 @@ public class UnionAffiliation {
     {
         double totalDeductions = 0;
         totalDeductions += numberOfFridaysInPayPeriod(payCheck.getPayPeriodStart(), payCheck.getPayPeriodEnd()) * dues;
-        for (ServiceCharge serviceCharge : serviceCharges.values())
+        for (ServiceCharge serviceCharge : serviceChargeMap.values())
         {
             if (isInPayPeriod(serviceCharge.getDate(), payCheck))
             {

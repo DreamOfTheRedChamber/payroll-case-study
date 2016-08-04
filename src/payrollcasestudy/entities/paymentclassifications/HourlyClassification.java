@@ -1,5 +1,6 @@
 package payrollcasestudy.entities.paymentclassifications;
 
+import payrollcasestudy.entities.PayCheck;
 import payrollcasestudy.entities.TimeCard;
 
 import java.util.Calendar;

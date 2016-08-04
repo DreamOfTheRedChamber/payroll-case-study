@@ -1,5 +1,7 @@
 package payrollcasestudy.entities;
 
+import java.util.Calendar;
+
 import payrollcasestudy.entities.affiliation.UnionAffiliation;
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.entities.paymentmethods.PaymentMethod;

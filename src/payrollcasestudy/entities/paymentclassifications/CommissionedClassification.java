@@ -1,17 +1,18 @@
 package payrollcasestudy.entities.paymentclassifications;
 
-import payrollcasestudy.entities.SalesReceipt;
-
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
+
+import payrollcasestudy.entities.PayCheck;
+import payrollcasestudy.entities.SalesReceipt;
 
 /**
  * employees paid based on sales receipts which record the date and amount of the sale
  */
 public class CommissionedClassification extends PaymentClassification {
     private double commissionRate;
-    private double salary;
+    private double monthlySalary;
     private Map<Calendar, SalesReceipt> salesReceiptMap = new HashMap<>();
 
     public double getMonthlySalary() {
@@ -24,7 +25,7 @@ public class CommissionedClassification extends PaymentClassification {
 
     public CommissionedClassification(double commissionRate, double salary) {
         this.commissionRate = commissionRate;
-        this.salary = salary;
+        this.monthlySalary = salary;
     }
 
     public void addSalesReceipt( SalesReceipt salesReceipt ) {

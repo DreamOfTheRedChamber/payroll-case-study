@@ -12,10 +12,18 @@ import java.util.Calendar;
 /**
  * Created by zhangshijie on 7/25/16.
  */
-public class AddTimeCardTransaction implements Transaction {
+public class AddTimeCardTransaction implements Transaction 
+{
     private Calendar date;
     private double hours;
     private int employeeId;
+
+    public AddTimeCardTransaction(Calendar date, double hours, int employeeId) 
+    {
+        this.date = date;
+        this.hours = hours;
+        this.employeeId = employeeId;
+    }
 
     @Override
     public void execute() {

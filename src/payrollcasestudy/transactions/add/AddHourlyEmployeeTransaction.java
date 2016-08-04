@@ -26,6 +26,6 @@ public class AddHourlyEmployeeTransaction extends AddEmployeeTransaction {
 
     @Override
     protected PaymentClassification getPaymentClassification() {
-        return new HourlyClassification();
+        return new HourlyClassification(hourlyRate);
     }
 }

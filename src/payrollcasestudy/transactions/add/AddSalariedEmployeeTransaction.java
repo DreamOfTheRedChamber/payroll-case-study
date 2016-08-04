@@ -26,7 +26,7 @@ public class AddSalariedEmployeeTransaction extends AddEmployeeTransaction {
 
     @Override
     protected PaymentClassification getPaymentClassification() {
-        return new SalariedClassification();
+        return new SalariedClassification(salary);
     }
 
 }

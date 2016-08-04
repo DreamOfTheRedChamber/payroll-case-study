@@ -1,5 +1,7 @@
 package payrollcasestudy.entities.paymentclassifications;
 
+import payrollcasestudy.entities.PayCheck;
+
 /**
  * Created by zhangshijie on 7/22/16.
  */
