@@ -1,9 +1,9 @@
 package payrollcasestudy.entities;
 
-import entities.affiliation.UnionAffiliation;
-import entities.paymentclassifications.PaymentClassification;
-import entities.paymentmethods.PaymentMethod;
-import entities.paymentschedule.PaymentSchedule;
+import payrollcasestudy.entities.affiliation.UnionAffiliation;
+import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
+import payrollcasestudy.entities.paymentmethods.PaymentMethod;
+import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
  * Employees: users of payroll system

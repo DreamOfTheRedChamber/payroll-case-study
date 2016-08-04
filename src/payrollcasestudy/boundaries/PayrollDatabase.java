@@ -3,7 +3,7 @@ package payrollcasestudy.boundaries;
 import java.util.HashMap;
 import java.util.Map;
 
-import entities.Employee;
+import payrollcasestudy.entities.Employee;
 
 /**
  * Created by zhangshijie on 7/25/16.
