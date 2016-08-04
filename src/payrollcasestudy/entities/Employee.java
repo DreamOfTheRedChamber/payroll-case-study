@@ -1,20 +1,22 @@
 package payrollcasestudy.entities;
 
-import payrollcasestudy.entities.affiliation.UnionAffiliation;
-import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
-import payrollcasestudy.entities.paymentmethods.PaymentMethod;
-import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
+import entities.affiliation.UnionAffiliation;
+import entities.paymentclassifications.PaymentClassification;
+import entities.paymentmethods.PaymentMethod;
+import entities.paymentschedule.PaymentSchedule;
 
 /**
  * Employees: users of payroll system
  */
-public class Employee {
+public class Employee 
+{
     private int employeeId;
     private String name;
     private String address;
     private PaymentClassification paymentClassification;
     private PaymentMethod paymentMethod;
     private PaymentSchedule paymentSchedule;
+    private UnionAffiliation unionAffiliation = UnionAffiliation.NO_AFFILIATION;
 
     public UnionAffiliation getUnionAffiliation() {
         return unionAffiliation;
@@ -23,8 +25,6 @@ public class Employee {
     public void setUnionAffiliation(UnionAffiliation unionAffiliation) {
         this.unionAffiliation = unionAffiliation;
     }
-
-    private UnionAffiliation unionAffiliation = UnionAffiliation.NO_AFFILIATION;
 
     public PaymentClassification getPaymentClassification() {
         return paymentClassification;

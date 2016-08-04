@@ -1,14 +1,15 @@
 package payrollcasestudy;
 
-import payrollcasestudy.entities.Employee;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import entities.Employee;
 
 /**
  * Created by zhangshijie on 7/25/16.
  */
-public class PayrollDatabase {
+public class PayrollDatabase 
+{
     public static PayrollDatabase globalPayrollDatabase = new PayrollDatabase();
     private Map<Integer, Employee> employeeMap = new HashMap<>();
     private Map<Integer, Employee> unionMembers = new HashMap<>();
@@ -28,11 +29,13 @@ public class PayrollDatabase {
         return employeeMap.get( employeeId );
     }
 
-    public void addUnionMember( int memberId, Employee employee ) {
+    public void addUnionMember( int memberId, Employee employee ) 
+    {
         unionMembers.put( memberId, employee);
     }
 
-    public void deleteUnionMember( int memberId ) {
+    public void deleteUnionMember( int memberId ) 
+    {
         unionMembers.remove( memberId );
     }
 }
