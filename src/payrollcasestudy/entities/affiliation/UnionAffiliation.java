@@ -33,4 +33,32 @@ public class UnionAffiliation {
     public int getMemberId() {
         return memberId;
     }
+    
+    public double calculateDeduction(PayCheck payCheck) 
+    {
+        double totalDeductions = 0;
+        totalDeductions += numberOfFridaysInPayPeriod(payCheck.getPayPeriodStart(), payCheck.getPayPeriodEnd()) * dues;
+        for (ServiceCharge serviceCharge : serviceCharges.values())
+        {
+            if (isInPayPeriod(serviceCharge.getDate(), payCheck))
+            {
+                totalDeductions += serviceCharge.getAmount();
+            }
+        }
+        return totalDeductions;
+    }
+
+    private int numberOfFridaysInPayPeriod(Calendar payPeriodStart, Calendar payPeriodEnd) 
+    {
+        int numberOfFridays = 0;
+        while (!payPeriodStart.after(payPeriodEnd))
+        {
+            if (payPeriodStart.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY)
+            {
+                numberOfFridays++;
+            }
+            payPeriodStart.add(Calendar.DAY_OF_MONTH, 1);
+        }
+        return numberOfFridays;
+    }
 }
