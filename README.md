@@ -11,4 +11,4 @@ It's written in Java, using JUnit 4.10 and Hamcrest 1.x for testing, Maven 3.x f
 
 Reference
 ---------
-https://github.com/Ookami86/payroll-casestudy[https://github.com/Ookami86/payroll-casestudy](https://github.com/Ookami86/payroll-casestudy "Johannes Seitz's implementation")
+[https://github.com/Ookami86/payroll-casestudy](https://github.com/Ookami86/payroll-casestudy "Johannes Seitz's implementation")
