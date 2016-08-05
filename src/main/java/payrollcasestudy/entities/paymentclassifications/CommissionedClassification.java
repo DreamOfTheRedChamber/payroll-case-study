@@ -29,7 +29,7 @@ public class CommissionedClassification extends PaymentClassification
 		return commissionRate;
 	}
 
-	public CommissionedClassification( double commissionRate, double salary )
+	public CommissionedClassification(  double salary, double commissionRate )
 	{
 		this.commissionRate = commissionRate;
 		this.monthlySalary = salary;
