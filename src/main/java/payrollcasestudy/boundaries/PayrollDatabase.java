@@ -1,5 +1,5 @@
 
-package java.payrollcasestudy.boundaries;
+package payrollcasestudy.boundaries;
 
 import java.util.HashMap;
 import java.util.Map;

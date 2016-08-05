@@ -8,6 +8,8 @@ import java.util.Map;
 import payrollcasestudy.entities.PayCheck;
 import payrollcasestudy.entities.ServiceCharge;
 
+import static payrollcasestudy.entities.paymentclassifications.PaymentClassification.isInPayPeriod;
+
 /**
  * Created by zhangshijie on 7/25/16.
  */

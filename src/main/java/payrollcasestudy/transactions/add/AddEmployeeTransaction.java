@@ -1,5 +1,5 @@
 
-package transactions.add;
+package payrollcasestudy.transactions.add;
 
 import payrollcasestudy.boundaries.PayrollDatabase;
 import payrollcasestudy.entities.Employee;
