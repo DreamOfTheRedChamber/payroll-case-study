@@ -20,25 +20,14 @@ public class AddServiceChargeTransaction implements Transaction
 	private double amount;
 	private int employeeId;
 
-	public AddServiceChargeTransaction( Calendar date, double amount,
-			int employeeId )
-	{
-		this.date = date;
-		this.amount = amount;
-		this.employeeId = employeeId;
-	}
+    public AddServiceChargeTransaction(int memberId, Calendar date, double amount) {
+        Employee unionMember = database.getUnionMember(memberId);
+        UnionAffiliation unionAffiliation = unionMember.getUnionAffiliation();
+        unionAffiliation.addServiceCharge(date, amount);
+    }
 
-	@Override
-	public void execute( )
-	{
-		Employee employee = database.getEmployee( employeeId );
-		if ( employee != null )
-		{
-			UnionAffiliation affiliation = employee.getUnionAffiliation( );
-			if ( affiliation != UnionAffiliation.NO_AFFILIATION )
-			{
-				affiliation.addServiceCharge( date, amount );
-			}
-		}
-	}
+    @Override
+    public void execute() 
+    {
+    }
 }
