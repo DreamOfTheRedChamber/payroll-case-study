@@ -12,7 +12,7 @@ public class WeeklyPaymentSchedule implements PaymentSchedule
 	@Override
 	public boolean isPayDate( Calendar payDate )
 	{
-		return true;
+        return payDate.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY;
 	}
 
 	@Override

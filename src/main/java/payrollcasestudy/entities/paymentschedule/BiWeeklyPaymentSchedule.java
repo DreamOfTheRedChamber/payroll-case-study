@@ -12,7 +12,8 @@ public class BiWeeklyPaymentSchedule implements PaymentSchedule
 	@Override
 	public boolean isPayDate( Calendar payDate )
 	{
-		return true;
+        boolean evenCalendarWeek = payDate.get(Calendar.WEEK_OF_YEAR) % 2 == 0;
+        return payDate.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY && evenCalendarWeek;
 	}
 
 	@Override
