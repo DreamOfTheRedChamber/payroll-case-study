@@ -1,12 +1,12 @@
 
-package main.java.payrollcasestudy.entities;
+package payrollcasestudy.entities;
 
 import java.util.Calendar;
 
-import main.java.payrollcasestudy.entities.affiliation.UnionAffiliation;
-import main.java.payrollcasestudy.entities.paymentclassifications.PaymentClassification;
-import main.java.payrollcasestudy.entities.paymentmethods.PaymentMethod;
-import main.java.payrollcasestudy.entities.paymentschedule.PaymentSchedule;
+import payrollcasestudy.entities.affiliation.UnionAffiliation;
+import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
+import payrollcasestudy.entities.paymentmethods.PaymentMethod;
+import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
  * Employees: users of payroll system

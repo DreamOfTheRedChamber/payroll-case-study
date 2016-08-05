@@ -1,7 +1,7 @@
 
-package main.java.payrollcasestudy.transactions.change;
+package payrollcasestudy.transactions.change;
 
-import main.java.payrollcasestudy.entities.Employee;
+import payrollcasestudy.entities.Employee;
 
 /**
  * Created by zhangshijie on 7/26/16.

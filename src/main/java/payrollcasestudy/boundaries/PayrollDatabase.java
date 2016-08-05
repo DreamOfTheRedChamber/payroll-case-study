@@ -1,11 +1,11 @@
 
-package main.java.payrollcasestudy.boundaries;
+package java.payrollcasestudy.boundaries;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import main.java.payrollcasestudy.entities.Employee;
+import payrollcasestudy.entities.Employee;
 
 /**
  * Created by zhangshijie on 7/25/16.
@@ -46,5 +46,11 @@ public class PayrollDatabase
 	{
 		return employeeMap.keySet( );
 	}
+	
+    public void clear()
+    {
+        employeeMap.clear();
+        unionMembers.clear();
+    }
 
 }

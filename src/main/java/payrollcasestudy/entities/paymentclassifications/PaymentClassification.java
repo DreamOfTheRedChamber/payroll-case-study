@@ -1,9 +1,9 @@
 
-package main.java.payrollcasestudy.entities.paymentclassifications;
+package payrollcasestudy.entities.paymentclassifications;
 
 import java.util.Calendar;
 
-import main.java.payrollcasestudy.entities.PayCheck;
+import payrollcasestudy.entities.PayCheck;
 
 /**
  * Created by zhangshijie on 7/22/16.

@@ -1,14 +1,14 @@
 
-package main.java.payrollcasestudy.transactions.add;
+package payrollcasestudy.transactions.add;
 
 import java.util.Calendar;
 
-import main.java.payrollcasestudy.boundaries.PayrollDatabase;
-import main.java.payrollcasestudy.entities.Employee;
-import main.java.payrollcasestudy.entities.SalesReceipt;
-import main.java.payrollcasestudy.entities.paymentclassifications.CommissionedClassification;
-import main.java.payrollcasestudy.entities.paymentclassifications.PaymentClassification;
-import main.java.payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.boundaries.PayrollDatabase;
+import payrollcasestudy.entities.Employee;
+import payrollcasestudy.entities.SalesReceipt;
+import payrollcasestudy.entities.paymentclassifications.CommissionedClassification;
+import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
+import payrollcasestudy.transactions.Transaction;
 
 /**
  * Created by zhangshijie on 7/26/16.

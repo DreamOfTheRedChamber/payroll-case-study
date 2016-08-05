@@ -1,5 +1,5 @@
 
-package main.java.payrollcasestudy.entities;
+package payrollcasestudy.entities;
 
 import java.util.Calendar;
 import java.util.HashMap;

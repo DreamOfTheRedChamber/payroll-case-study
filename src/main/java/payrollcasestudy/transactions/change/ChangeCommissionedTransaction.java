@@ -1,10 +1,10 @@
 
-package main.java.payrollcasestudy.transactions.change;
+package payrollcasestudy.transactions.change;
 
-import main.java.payrollcasestudy.entities.paymentclassifications.CommissionedClassification;
-import main.java.payrollcasestudy.entities.paymentclassifications.PaymentClassification;
-import main.java.payrollcasestudy.entities.paymentschedule.MonthlyPaymentSchedule;
-import main.java.payrollcasestudy.entities.paymentschedule.PaymentSchedule;
+import payrollcasestudy.entities.paymentclassifications.CommissionedClassification;
+import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
+import payrollcasestudy.entities.paymentschedule.MonthlyPaymentSchedule;
+import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
  * Created by zhangshijie on 7/26/16.

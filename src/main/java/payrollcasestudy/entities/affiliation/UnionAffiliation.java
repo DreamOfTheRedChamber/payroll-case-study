@@ -1,15 +1,12 @@
 
-package main.java.payrollcasestudy.entities.affiliation;
-
-import static main.java.payrollcasestudy.entities.paymentclassifications.PaymentClassification.isInPayPeriod;
+package payrollcasestudy.entities.affiliation;
 
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-import main.java.payrollcasestudy.entities.PayCheck;
-import main.java.payrollcasestudy.entities.ServiceCharge;
-import main.java.payrollcasestudy.entities.paymentclassifications.PaymentClassification;
+import payrollcasestudy.entities.PayCheck;
+import payrollcasestudy.entities.ServiceCharge;
 
 /**
  * Created by zhangshijie on 7/25/16.

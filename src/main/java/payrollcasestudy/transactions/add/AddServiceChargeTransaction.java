@@ -1,12 +1,12 @@
 
-package main.java.payrollcasestudy.transactions.add;
+package payrollcasestudy.transactions.add;
 
 import java.util.Calendar;
 
-import main.java.payrollcasestudy.boundaries.PayrollDatabase;
-import main.java.payrollcasestudy.entities.Employee;
-import main.java.payrollcasestudy.entities.affiliation.UnionAffiliation;
-import main.java.payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.boundaries.PayrollDatabase;
+import payrollcasestudy.entities.Employee;
+import payrollcasestudy.entities.affiliation.UnionAffiliation;
+import payrollcasestudy.transactions.Transaction;
 
 /**
  * Created by zhangshijie on 7/26/16.

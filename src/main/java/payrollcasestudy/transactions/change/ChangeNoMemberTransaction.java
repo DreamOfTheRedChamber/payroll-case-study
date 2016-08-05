@@ -1,8 +1,8 @@
 
-package main.java.payrollcasestudy.transactions.change;
+package payrollcasestudy.transactions.change;
 
-import main.java.payrollcasestudy.entities.Employee;
-import main.java.payrollcasestudy.entities.affiliation.UnionAffiliation;
+import payrollcasestudy.entities.Employee;
+import payrollcasestudy.entities.affiliation.UnionAffiliation;
 
 /**
  * Created by zhangshijie on 7/26/16.

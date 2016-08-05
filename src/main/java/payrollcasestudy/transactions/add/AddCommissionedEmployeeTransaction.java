@@ -1,11 +1,11 @@
 
-package main.java.payrollcasestudy.transactions.add;
+package payrollcasestudy.transactions.add;
 
-import main.java.payrollcasestudy.entities.paymentclassifications.CommissionedClassification;
-import main.java.payrollcasestudy.entities.paymentclassifications.PaymentClassification;
-import main.java.payrollcasestudy.entities.paymentmethods.PaymentMethod;
-import main.java.payrollcasestudy.entities.paymentschedule.BiWeeklyPaymentSchedule;
-import main.java.payrollcasestudy.entities.paymentschedule.PaymentSchedule;
+import payrollcasestudy.entities.paymentclassifications.CommissionedClassification;
+import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
+import payrollcasestudy.entities.paymentmethods.PaymentMethod;
+import payrollcasestudy.entities.paymentschedule.BiWeeklyPaymentSchedule;
+import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
  * Created by zhangshijie on 7/25/16.

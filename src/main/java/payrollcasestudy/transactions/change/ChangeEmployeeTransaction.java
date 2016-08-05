@@ -1,9 +1,9 @@
 
-package main.java.payrollcasestudy.transactions.change;
+package payrollcasestudy.transactions.change;
 
-import main.java.payrollcasestudy.boundaries.PayrollDatabase;
-import main.java.payrollcasestudy.entities.Employee;
-import main.java.payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.boundaries.PayrollDatabase;
+import payrollcasestudy.entities.Employee;
+import payrollcasestudy.transactions.Transaction;
 
 /**
  * Created by zhangshijie on 7/26/16.

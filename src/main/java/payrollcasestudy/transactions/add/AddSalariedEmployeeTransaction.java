@@ -1,11 +1,11 @@
 
-package main.java.payrollcasestudy.transactions.add;
+package payrollcasestudy.transactions.add;
 
-import main.java.payrollcasestudy.entities.paymentclassifications.PaymentClassification;
-import main.java.payrollcasestudy.entities.paymentclassifications.SalariedClassification;
-import main.java.payrollcasestudy.entities.paymentmethods.HoldMethod;
-import main.java.payrollcasestudy.entities.paymentschedule.MonthlyPaymentSchedule;
-import main.java.payrollcasestudy.entities.paymentschedule.PaymentSchedule;
+import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
+import payrollcasestudy.entities.paymentclassifications.SalariedClassification;
+import payrollcasestudy.entities.paymentmethods.HoldMethod;
+import payrollcasestudy.entities.paymentschedule.MonthlyPaymentSchedule;
+import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
  * Created by zhangshijie on 7/25/16.

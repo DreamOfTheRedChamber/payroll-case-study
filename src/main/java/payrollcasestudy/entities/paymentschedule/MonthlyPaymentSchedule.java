@@ -1,5 +1,5 @@
 
-package main.java.payrollcasestudy.entities.paymentschedule;
+package payrollcasestudy.entities.paymentschedule;
 
 import java.util.Calendar;
 

@@ -1,8 +1,8 @@
 
-package main.java.payrollcasestudy.transactions.delete;
+package payrollcasestudy.transactions.delete;
 
-import main.java.payrollcasestudy.boundaries.PayrollDatabase;
-import main.java.payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.boundaries.PayrollDatabase;
+import payrollcasestudy.transactions.Transaction;
 
 /**
  * Created by zhangshijie on 7/25/16.

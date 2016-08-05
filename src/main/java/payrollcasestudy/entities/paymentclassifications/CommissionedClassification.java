@@ -1,12 +1,12 @@
 
-package main.java.payrollcasestudy.entities.paymentclassifications;
+package payrollcasestudy.entities.paymentclassifications;
 
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-import main.java.payrollcasestudy.entities.PayCheck;
-import main.java.payrollcasestudy.entities.SalesReceipt;
+import payrollcasestudy.entities.PayCheck;
+import payrollcasestudy.entities.SalesReceipt;
 
 /**
  * employees paid based on sales receipts which record the date and amount of

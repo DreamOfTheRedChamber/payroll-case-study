@@ -1,5 +1,5 @@
 
-package main.java.payrollcasestudy.transactions;
+package payrollcasestudy.transactions;
 
 /**
  * 

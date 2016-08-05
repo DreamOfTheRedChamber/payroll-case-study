@@ -1,8 +1,8 @@
 
-package main.java.payrollcasestudy.transactions.change;
+package payrollcasestudy.transactions.change;
 
-import main.java.payrollcasestudy.entities.paymentmethods.MailMethod;
-import main.java.payrollcasestudy.entities.paymentmethods.PaymentMethod;
+import payrollcasestudy.entities.paymentmethods.MailMethod;
+import payrollcasestudy.entities.paymentmethods.PaymentMethod;
 
 /**
  * Created by zhangshijie on 7/26/16.

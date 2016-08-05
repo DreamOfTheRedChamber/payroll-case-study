@@ -1,7 +1,7 @@
 
-package main.java.payrollcasestudy.entities.paymentmethods;
+package payrollcasestudy.entities.paymentmethods;
 
-import main.java.payrollcasestudy.entities.PayCheck;
+import payrollcasestudy.entities.PayCheck;
 
 /**
  * paychecks held for pick up by paymentmaster

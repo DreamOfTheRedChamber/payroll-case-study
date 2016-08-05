@@ -1,7 +1,7 @@
 
-package main.java.payrollcasestudy.entities.paymentmethods;
+package payrollcasestudy.entities.paymentmethods;
 
-import main.java.payrollcasestudy.entities.PayCheck;
+import payrollcasestudy.entities.PayCheck;
 
 /**
  * Created by zhangshijie on 7/22/16.
