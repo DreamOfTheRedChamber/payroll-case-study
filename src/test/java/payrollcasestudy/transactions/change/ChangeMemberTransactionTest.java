@@ -12,7 +12,7 @@ import org.junit.Test;
 import payrollcasestudy.DatabaseResource;
 import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.affiliation.UnionAffiliation;
-import payrollcasestudy.entities.paymentmethods.Hol	dMethod;
+import payrollcasestudy.entities.paymentmethods.HoldMethod;
 import payrollcasestudy.transactions.add.AddEmployeeTransaction;
 import payrollcasestudy.transactions.add.AddHourlyEmployeeTransaction;
 
