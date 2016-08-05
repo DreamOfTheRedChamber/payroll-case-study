@@ -21,6 +21,7 @@ public abstract class ChangeAffiliationTransaction
 	public void changeEmployee( Employee employee )
 	{
 		recordMembership( employee );
+        employee.setUnionAffiliation(getAffiliation());
 	}
 
 	protected abstract UnionAffiliation getAffiliation( );
