@@ -1,3 +1,4 @@
+
 package payrollcasestudy.transactions.add;
 
 import static org.hamcrest.Matchers.closeTo;
@@ -19,27 +20,33 @@ import payrollcasestudy.transactions.Transaction;
 
 public class AddCommissionedEmployeeTransactionTest
 {
-    @Rule
-    public DatabaseResource database = new DatabaseResource();
 
-    @Test
-    public void testAddCommissionedEmployee(){
-        int employeeId = 1;
-        Transaction addEmployeeTransaction =
-                new AddCommissionedEmployeeTransaction(employeeId, "Michael", "Home", new HoldMethod(), 200.0 , 20.0);
-        addEmployeeTransaction.execute();
-        Employee employee = database.getInstance().getEmployee(employeeId);
-        assertThat(employee.getName(), is("Michael"));
+	@Rule
+	public DatabaseResource database = new DatabaseResource( );
 
-        PaymentClassification paymentClassification = employee.getPaymentClassification();
-        assertThat(paymentClassification, is(instanceOf(CommissionedClassification.class)));
-        CommissionedClassification commissionedClassification =
-                (CommissionedClassification) paymentClassification;
-        assertThat(commissionedClassification.getCommissionRate(), is(closeTo(20.0, FLOAT_ACCURACY)));
-        assertThat(commissionedClassification.getMonthlySalary(), is(closeTo(200.0, FLOAT_ACCURACY)));
+	@Test
+	public void testAddCommissionedEmployee( )
+	{
+		int employeeId = 1;
+		Transaction addEmployeeTransaction = new AddCommissionedEmployeeTransaction(
+				employeeId, "Michael", "Home", new HoldMethod( ), 200.0, 20.0 );
+		addEmployeeTransaction.execute( );
+		Employee employee = database.getInstance( ).getEmployee( employeeId );
+		assertThat( employee.getName( ), is( "Michael" ) );
 
-        assertThat(employee.getPaymentSchedule(), is(instanceOf(BiWeeklyPaymentSchedule.class)));
-        assertThat(employee.getPaymentMethod(), is(instanceOf(HoldMethod.class)));
-    }
+		PaymentClassification paymentClassification = employee
+				.getPaymentClassification( );
+		assertThat( paymentClassification,
+				is( instanceOf( CommissionedClassification.class ) ) );
+		CommissionedClassification commissionedClassification = (CommissionedClassification) paymentClassification;
+		assertThat( commissionedClassification.getCommissionRate( ),
+				is( closeTo( 20.0, FLOAT_ACCURACY ) ) );
+		assertThat( commissionedClassification.getMonthlySalary( ),
+				is( closeTo( 200.0, FLOAT_ACCURACY ) ) );
 
+		assertThat( employee.getPaymentSchedule( ),
+				is( instanceOf( BiWeeklyPaymentSchedule.class ) ) );
+		assertThat( employee.getPaymentMethod( ),
+				is( instanceOf( HoldMethod.class ) ) );
+	}
 }
