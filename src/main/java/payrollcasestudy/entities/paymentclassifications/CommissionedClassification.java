@@ -35,6 +35,11 @@ public class CommissionedClassification extends PaymentClassification
 		this.monthlySalary = salary;
 	}
 
+	public SalesReceipt getSalesReceipt( Calendar date )
+	{
+		return salesReceiptMap.get( date );
+	}
+	
 	public void addSalesReceipt( SalesReceipt salesReceipt )
 	{
 		salesReceiptMap.put( salesReceipt.getDate( ), salesReceipt );

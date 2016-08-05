@@ -32,6 +32,11 @@ public class PayrollDatabase
 		return employeeMap.get( employeeId );
 	}
 
+	public Employee getUnionMember( int memberId )
+	{
+		return unionMembers.get( memberId );
+	}
+	
 	public void addUnionMember( int memberId, Employee employee )
 	{
 		unionMembers.put( memberId, employee );

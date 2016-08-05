@@ -16,10 +16,15 @@ public class SalariedClassification extends PaymentClassification
 		this.salary = salary;
 	}
 
+	public double getSalary()
+	{
+		return salary;
+	}
+	
 	@Override
 	public double calculatePay( PayCheck payCheck )
 	{
 		return salary;
 	}
-
+	
 }

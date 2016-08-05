@@ -35,6 +35,11 @@ public class UnionAffiliation
 		this.serviceChargeMap.put( date, new ServiceCharge( date, amount ) );
 	}
 
+    public ServiceCharge getServiceCharge(Calendar date) 
+    {
+        return serviceChargeMap.get( date );
+    }
+    
 	public double getDues( )
 	{
 		return dues;

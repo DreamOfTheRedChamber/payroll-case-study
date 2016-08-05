@@ -23,10 +23,20 @@ public class HourlyClassification extends PaymentClassification
 		timeCardMap = new HashMap<>( );
 	}
 
+    public double getHourlyRate() 
+    {
+        return hourlyRate;
+    }
+	
 	public void addTimeCard( TimeCard timeCard )
 	{
 		timeCardMap.put( timeCard.getDate( ), timeCard );
 	}
+
+    public TimeCard getTimeCard(Calendar date) 
+    {
+        return timeCardMap.get(date);
+    }
 
 	@Override
 	public double calculatePay( PayCheck payCheck )
