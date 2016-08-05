@@ -23,6 +23,10 @@ public class PaydayTransaction implements Transaction
 		this.payDate = payDate;
 	}
 
+	/**
+	 * 1. calculate a list of paychecks which should be issued this day
+	 * 2. pay employees with corresponding methods
+	 */
 	public void execute( )
 	{
 		for ( Integer employeeId : database.getAllEmployeeIds( ) )
