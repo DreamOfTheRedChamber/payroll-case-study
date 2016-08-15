@@ -11,7 +11,7 @@ import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.transactions.Transaction;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which adds a sales receipt to a commissioned employee
  */
 public class AddSalesReceiptTransaction implements Transaction
 {

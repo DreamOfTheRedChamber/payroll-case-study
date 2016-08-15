@@ -11,7 +11,7 @@ import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.transactions.Transaction;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * transaction which adds a time card to an hourly paid employee
  */
 public class AddTimeCardTransaction implements Transaction
 {

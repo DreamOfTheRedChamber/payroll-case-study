@@ -8,7 +8,7 @@ import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 import payrollcasestudy.entities.paymentschedule.WeeklyPaymentSchedule;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * transaction that adds an hourly employee to database
  */
 public class AddHourlyEmployeeTransaction extends AddEmployeeTransaction
 {

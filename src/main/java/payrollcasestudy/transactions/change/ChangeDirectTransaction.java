@@ -5,7 +5,7 @@ import payrollcasestudy.entities.paymentmethods.DirectMethod;
 import payrollcasestudy.entities.paymentmethods.PaymentMethod;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which changes employees' payment method to paychecks being directly deposit to bank account
  */
 public class ChangeDirectTransaction extends ChangeMethodTransaction
 {

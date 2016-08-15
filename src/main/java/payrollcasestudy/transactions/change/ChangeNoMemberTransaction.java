@@ -5,7 +5,7 @@ import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.affiliation.UnionAffiliation;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which removes an employee from an affiliation
  */
 public class ChangeNoMemberTransaction extends ChangeAffiliationTransaction
 {

@@ -5,7 +5,7 @@ import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.paymentmethods.PaymentMethod;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which changes the payment method of an employee
  */
 public abstract class ChangeMethodTransaction extends ChangeEmployeeTransaction
 {

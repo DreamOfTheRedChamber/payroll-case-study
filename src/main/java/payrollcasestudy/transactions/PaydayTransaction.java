@@ -2,7 +2,7 @@
 package payrollcasestudy.transactions;
 
 /**
- * 
+ * transaction which pays employees with paychecks on a specific date
  */
 
 import payrollcasestudy.boundaries.PayrollDatabase;

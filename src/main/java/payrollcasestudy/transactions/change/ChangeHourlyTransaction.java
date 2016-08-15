@@ -7,7 +7,7 @@ import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 import payrollcasestudy.entities.paymentschedule.WeeklyPaymentSchedule;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which changes an employee to hourly paid
  */
 public class ChangeHourlyTransaction extends ChangeClassificationTransaction
 {

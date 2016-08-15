@@ -7,7 +7,7 @@ import payrollcasestudy.entities.paymentschedule.MonthlyPaymentSchedule;
 import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which changes an employee to commissioned employee
  */
 public class ChangeCommissionedTransaction
 		extends
