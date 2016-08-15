@@ -4,7 +4,7 @@ package payrollcasestudy.entities.paymentschedule;
 import java.util.Calendar;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * represents schedule which is paid monthly
  */
 public class MonthlyPaymentSchedule implements PaymentSchedule
 {

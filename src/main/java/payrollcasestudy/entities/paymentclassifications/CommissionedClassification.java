@@ -9,8 +9,7 @@ import payrollcasestudy.entities.PayCheck;
 import payrollcasestudy.entities.SalesReceipt;
 
 /**
- * employees paid based on sales receipts which record the date and amount of
- * the sale
+ * represents payment classification which is paid on a combination of monthly salary and commission rate
  */
 public class CommissionedClassification extends PaymentClassification
 {

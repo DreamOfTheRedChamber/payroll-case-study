@@ -4,7 +4,7 @@ package payrollcasestudy.entities;
 import java.util.Calendar;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * Represents sales receipts for commissioned employees who are paid according to their sales
  */
 public class SalesReceipt
 {

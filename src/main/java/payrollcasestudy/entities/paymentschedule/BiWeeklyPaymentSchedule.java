@@ -4,10 +4,11 @@ package payrollcasestudy.entities.paymentschedule;
 import java.util.Calendar;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * represents schedule which is paid biweekly
  */
 public class BiWeeklyPaymentSchedule implements PaymentSchedule
 {
+	private final static int LENGTH_OF_BIWEEK = 13;
 
 	@Override
 	public boolean isPayDate( Calendar payDate )
@@ -20,7 +21,7 @@ public class BiWeeklyPaymentSchedule implements PaymentSchedule
 	public Calendar getPayPeriodStartDate( Calendar payDate )
 	{
 		Calendar payPeriodStartDate = (Calendar) payDate.clone( );
-		payPeriodStartDate.add( Calendar.DAY_OF_MONTH, -13 );
+		payPeriodStartDate.add( Calendar.DAY_OF_MONTH, -LENGTH_OF_BIWEEK );
 		return payPeriodStartDate;
 	}
 

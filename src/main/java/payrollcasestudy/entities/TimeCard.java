@@ -4,7 +4,7 @@ package payrollcasestudy.entities;
 import java.util.Calendar;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * Represents time cards for hourly employees who are paid by the amount of working hour
  */
 public class TimeCard
 {

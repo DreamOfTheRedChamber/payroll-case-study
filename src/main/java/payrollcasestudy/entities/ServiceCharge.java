@@ -4,7 +4,7 @@ package payrollcasestudy.entities;
 import java.util.Calendar;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * Represents service charges for employees who are enrolled in specific affiliations
  */
 public class ServiceCharge
 {

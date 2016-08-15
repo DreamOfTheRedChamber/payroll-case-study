@@ -4,7 +4,7 @@ package payrollcasestudy.entities.paymentclassifications;
 import payrollcasestudy.entities.PayCheck;
 
 /**
- * Created by zhangshijie on 7/22/16.
+ * represent payment classification which is based on a flat salary
  */
 public class SalariedClassification extends PaymentClassification
 {

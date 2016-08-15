@@ -9,7 +9,7 @@ import payrollcasestudy.entities.paymentmethods.PaymentMethod;
 import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
- * Employees: users of payroll system
+ * Represents employees who are payees of this payroll system
  */
 public class Employee
 {
@@ -102,6 +102,10 @@ public class Employee
 		return paymentSchedule.getPayPeriodStartDate( payDate );
 	}
 
+	/**
+	 * 
+	 * @param payCheck
+	 */
 	public void payDay( PayCheck payCheck )
 	{
 		double grossPay = paymentClassification.calculatePay( payCheck );
@@ -110,6 +114,7 @@ public class Employee
 		payCheck.setGrossPay( grossPay );
 		payCheck.setDeductions( deductions );
 		payCheck.setNetPay( netPay );
+		
 		paymentMethod.pay( payCheck );
 	}
 }
