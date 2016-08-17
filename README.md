@@ -1,7 +1,7 @@
 # Payroll Case Study
 ==================
 
-This is my implementation of the Payroll Case Study from the book Agile Software
+This is my learning journey of the Payroll Case Study from the book Agile Software
 Development by Robert C. Martin (a.k.a. Uncle Bob).
 
 # Implementation details
