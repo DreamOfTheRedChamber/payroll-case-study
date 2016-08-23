@@ -9,10 +9,11 @@ Development by Robert C. Martin (a.k.a. Uncle Bob).
 # Core UMLs
 
 # Adopted design patterns
-![alt tag](http://url/to/img.png)
-It's written in Java, using JUnit 4.10 and Hamcrest 1.x for testing, Maven 3.x for dependency management.
 
 # Core sequence diagrams
+
+# Implementation details
+It's written in Java, using JUnit 4.10 and Hamcrest 1.x for testing, Maven 3.x for dependency management.
 
 Reference
 ---------
