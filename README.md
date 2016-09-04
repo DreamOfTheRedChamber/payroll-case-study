@@ -16,64 +16,64 @@ Development by Robert C. Martin (a.k.a. Uncle Bob).
 
 ## Core Class UMLs <a id="core-class-UMLs"></a>
 * Employee
-![Employee](/content/images/2016/08/class-Employee.png)
+![Employee](/images/class-Employee.png)
 
 * AddEmployeeTransaction
-![AddEmployee](/content/images/2016/08/class-AddEmployeeTransaction.png)
+![AddEmployee](/images/class-AddEmployeeTransaction.png)
 
 * ChangeEmployeeTransaction
-![ChangeEmployeeTransaction1](/content/images/2016/08/class-ChangeEmployeeTransaction.png)
+![ChangeEmployeeTransaction1](/images/class-ChangeEmployeeTransaction.png)
 
 * DeleteEmployeeTransaction
 <div style="width: 500px">
-![DeleteEmployee](/content/images/2016/08/class-DeleteEmployeeTransaction-1.png)
+![DeleteEmployee](/images/class-DeleteEmployeeTransaction-1.png)
 </div>
 
 * TimeCardTransaction
 <div style="width: 500px">
-![TimeCardTransaction](/content/images/2016/08/class-TimeCardTransaction.png)
+![TimeCardTransaction](/images/class-TimeCardTransaction.png)
 </div>
 
 * SalesReceiptTransaction
-![SalesReceiptTransaction](/content/images/2016/08/class-SalesReceiptTransaction.png)
+![SalesReceiptTransaction](/images/class-SalesReceiptTransaction.png)
 * ServiceChargeTransaction
-![ServiceChargeTransaction](/content/images/2016/08/class-ServiceChargeTransaction.png)
+![ServiceChargeTransaction](/images/class-ServiceChargeTransaction.png)
 
 * PaydayTransaction
 <div style="width: 500px">
-![](/content/images/2016/08/class-paydaytransaction.png)
+![](/images/class-paydaytransaction.png)
 </div>
 
 ## Core Sequence UMLs <a id="core-sequence-UMLs"></a>
 * Main program
-![](/content/images/2016/08/seq-MainProgram.png)
+![](/images/seq-MainProgram.png)
 * PaydayTransaction
-![](/content/images/2016/08/seq-PaydayTransaction.png)
+![](/images/seq-PaydayTransaction.png)
 * ChangeClassificationTransaction
-![](/content/images/2016/08/seq-ChangeClassificationTransaction.png)
+![](/images/seq-ChangeClassificationTransaction.png)
 * ChangeMethodTransaction
-![](/content/images/2016/08/seq-ChangeMethodTransaction.png)
+![](/images/seq-ChangeMethodTransaction.png)
 * ChangeAffiliationTransaction
-![](/content/images/2016/08/seq-ChangeAffiliationTransaction.png)
+![](/images/seq-ChangeAffiliationTransaction.png)
 * ServiceChargeTransaction
-![](/content/images/2016/08/seq-ServiceChargeTransaction.png)
+![](/images/seq-ServiceChargeTransaction.png)
 * SalesReceiptTransaction
-![](/content/images/2016/08/seq-SalesReceiptTransaction.png)
+![](/images/seq-SalesReceiptTransaction.png)
 * TimeCardTransaction
-![](/content/images/2016/08/seq-TimeCardTransaction.png)
+![](/images/seq-TimeCardTransaction.png)
 * AddEmployeeTransaction
-![](/content/images/2016/08/seq-AddEmployees.png)
+![](/images/seq-AddEmployees.png)
 
 
 ## Adopted Design Patterns <a id="design-patterns"></a>
-![](/content/images/2016/08/designPatterns.png)
+![](/images/designPatterns.png)
 
 ## Package Design <a id="package-design"></a>
 * Implemented package structure
   * Entities
-![](/content/images/2016/08/payroll-implemented-entities.png)
+![](/images/payroll-implemented-entities.png)
   * Transactions
-![](/content/images/2016/08/payroll-implemented-trans-structure.png)
+![](/images/payroll-implemented-trans-structure.png)
 
 Reference
 ---------
