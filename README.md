@@ -1,8 +1,8 @@
 # Payroll Case Study
 ==================
 
-This is my learning journey of the Payroll Case Study from the book Agile Software
-Development by Robert C. Martin (a.k.a. Uncle Bob).
+This is my learning journey of the Payroll Case Study from the book <<Agile Software
+Development>> by Robert C. Martin (a.k.a. Uncle Bob).
 
 # Overview
   * [Use Cases](#use-case)
@@ -10,7 +10,7 @@ Development by Robert C. Martin (a.k.a. Uncle Bob).
   * [Core Sequence UMLS](#core-sequence-UMLs)
   * [Adopted Design Patterns](#design-patterns)
   * [Package Design](#package-design)
-
+  * [Reference](#reference)
 ## Use Cases <a id="use-case"></a>
 ![Use case diagram](/images/Payroll-use-case.png)
 
@@ -75,6 +75,6 @@ Development by Robert C. Martin (a.k.a. Uncle Bob).
   * Transactions
 ![](/images/payroll-implemented-trans-structure.png)
 
-Reference
+Reference<a id="reference"></a>
 ---------
 [https://github.com/Ookami86/payroll-casestudy](https://github.com/Ookami86/payroll-casestudy "Johannes Seitz's implementation")
