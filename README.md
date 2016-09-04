@@ -75,6 +75,6 @@ Development>> by Robert C. Martin (a.k.a. Uncle Bob).
   * Transactions
 ![](/images/payroll-implemented-trans-structure.png)
 
-Reference<a id="reference"></a>
+## Reference<a id="reference"></a>
 ---------
 [https://github.com/Ookami86/payroll-casestudy](https://github.com/Ookami86/payroll-casestudy "Johannes Seitz's implementation")
