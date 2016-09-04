@@ -4,7 +4,7 @@ package payrollcasestudy.entities.paymentmethods;
 import payrollcasestudy.entities.PayCheck;
 
 /**
- * paycheck directly mailed to postal address
+ * represents the payment method which is directly mailed to postal address
  */
 public class MailMethod implements PaymentMethod
 {

@@ -5,7 +5,7 @@ import payrollcasestudy.entities.paymentmethods.MailMethod;
 import payrollcasestudy.entities.paymentmethods.PaymentMethod;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which changes employees' payment method to mailing paychecks to their addresses
  */
 public class ChangeMailTransaction extends ChangeMethodTransaction
 {

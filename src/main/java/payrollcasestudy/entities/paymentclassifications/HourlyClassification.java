@@ -9,7 +9,7 @@ import payrollcasestudy.entities.PayCheck;
 import payrollcasestudy.entities.TimeCard;
 
 /**
- * employees paid on an hourly rate
+ * represents payment schedule which is based on the number of working hours
  */
 public class HourlyClassification extends PaymentClassification
 {

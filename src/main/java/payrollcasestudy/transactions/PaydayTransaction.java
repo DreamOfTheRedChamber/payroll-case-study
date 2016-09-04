@@ -2,7 +2,7 @@
 package payrollcasestudy.transactions;
 
 /**
- * 
+ * transaction which pays employees with paychecks on a specific date
  */
 
 import payrollcasestudy.boundaries.PayrollDatabase;
@@ -24,8 +24,8 @@ public class PaydayTransaction implements Transaction
 	}
 
 	/**
-	 * 1. calculate a list of paychecks which should be issued this day
-	 * 2. pay employees with corresponding methods
+	 * This method judge whether <code>payDate</code> is employees' pay date and pays them
+	 * 
 	 */
 	public void execute( )
 	{

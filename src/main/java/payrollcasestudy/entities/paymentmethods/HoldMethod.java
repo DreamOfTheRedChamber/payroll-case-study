@@ -4,7 +4,7 @@ package payrollcasestudy.entities.paymentmethods;
 import payrollcasestudy.entities.PayCheck;
 
 /**
- * paychecks held for pick up by paymentmaster
+ * represents the payment method which is held by paymentmaster for pick up 
  */
 public class HoldMethod implements PaymentMethod
 {

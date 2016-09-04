@@ -6,7 +6,7 @@ import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which changes employees' payment classification ( payment schedule accordingly ) 
  */
 public abstract class ChangeClassificationTransaction
 		extends

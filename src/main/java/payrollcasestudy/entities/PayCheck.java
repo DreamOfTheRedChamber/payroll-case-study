@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by zhangshijie on 7/22/16.
+ * represent a paycheck an employee is associated with
  */
 public class PayCheck
 {
@@ -16,6 +16,8 @@ public class PayCheck
 	private double netPay;
 	private Calendar payPeriodStart;
 	private Calendar payDate;
+	
+	// for storing different payment method fields
 	private Map<String, String> fields = new HashMap<String, String>( );
 
 	public PayCheck( Calendar payPeriodStart, Calendar payPeriodEnd )

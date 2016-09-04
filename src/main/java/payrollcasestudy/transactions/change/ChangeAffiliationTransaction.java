@@ -5,7 +5,7 @@ import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.affiliation.UnionAffiliation;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * change employees to enroll in / withdraw from affiliations
  */
 public abstract class ChangeAffiliationTransaction
 		extends

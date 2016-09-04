@@ -6,7 +6,7 @@ import java.util.Calendar;
 import payrollcasestudy.entities.PayCheck;
 
 /**
- * Created by zhangshijie on 7/22/16.
+ * represent payment classification according to which employees are paid
  */
 public abstract class PaymentClassification
 {

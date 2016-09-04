@@ -5,7 +5,7 @@ import payrollcasestudy.boundaries.PayrollDatabase;
 import payrollcasestudy.transactions.Transaction;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * transaction which delete an employee from the database
  */
 public class DeleteEmployeeTransaction implements Transaction
 {

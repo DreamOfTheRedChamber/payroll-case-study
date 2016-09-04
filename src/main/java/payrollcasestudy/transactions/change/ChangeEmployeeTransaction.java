@@ -6,7 +6,7 @@ import payrollcasestudy.entities.Employee;
 import payrollcasestudy.transactions.Transaction;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which changes attributes of an employee
  */
 public abstract class ChangeEmployeeTransaction implements Transaction
 {

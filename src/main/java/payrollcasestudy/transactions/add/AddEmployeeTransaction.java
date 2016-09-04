@@ -28,14 +28,17 @@ public abstract class AddEmployeeTransaction implements Transaction
 		this.paymentMethod = paymentMethod;
 	}
 
+	/**
+	 * create employee, set its composite attributes and save to database
+	 */
 	@Override
 	public void execute( )
-	{
+	{		
 		Employee employee = new Employee( employeeId,
 				employeeName,
 				employeeAddress );
+		
 		employee.setPaymentMethod( paymentMethod );
-
 		PaymentClassification paymentClassification = getPaymentClassification( );
 		employee.setPaymentClassification( paymentClassification );
 		PaymentSchedule paymentSchedule = getPaymentSchedule( );

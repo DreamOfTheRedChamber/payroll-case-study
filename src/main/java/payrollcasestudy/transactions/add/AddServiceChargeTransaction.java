@@ -9,7 +9,7 @@ import payrollcasestudy.entities.affiliation.UnionAffiliation;
 import payrollcasestudy.transactions.Transaction;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which adds a service charge deduction to employees from enrolled union affiliations
  */
 public class AddServiceChargeTransaction implements Transaction
 {

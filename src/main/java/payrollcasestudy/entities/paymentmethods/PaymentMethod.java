@@ -4,7 +4,8 @@ package payrollcasestudy.entities.paymentmethods;
 import payrollcasestudy.entities.PayCheck;
 
 /**
- * Created by zhangshijie on 7/22/16.
+ * 
+ * PaymentMethod is specified by fields inside payCheck
  */
 public interface PaymentMethod
 {

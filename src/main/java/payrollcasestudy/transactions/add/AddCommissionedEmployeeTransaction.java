@@ -8,7 +8,7 @@ import payrollcasestudy.entities.paymentschedule.BiWeeklyPaymentSchedule;
 import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * transaction that adds a commissioned employee to database
  */
 public class AddCommissionedEmployeeTransaction extends AddEmployeeTransaction
 {

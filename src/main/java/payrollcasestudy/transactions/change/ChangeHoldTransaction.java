@@ -5,7 +5,7 @@ import payrollcasestudy.entities.paymentmethods.HoldMethod;
 import payrollcasestudy.entities.paymentmethods.PaymentMethod;
 
 /**
- * Created by zhangshijie on 7/26/16.
+ * transaction which changes an employee's payment method to paychecks being held by payment master
  */
 public class ChangeHoldTransaction extends ChangeMethodTransaction
 {

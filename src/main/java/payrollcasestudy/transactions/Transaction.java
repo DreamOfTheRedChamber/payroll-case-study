@@ -2,7 +2,7 @@
 package payrollcasestudy.transactions;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * base class for all types of transactions
  */
 public interface Transaction
 {

@@ -4,11 +4,12 @@ package payrollcasestudy.entities.paymentschedule;
 import java.util.Calendar;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * represents schedule which is paid weekly
  */
 public class WeeklyPaymentSchedule implements PaymentSchedule
 {
-
+	private final static int LENGTH_OF_WEEK = 5;
+	
 	@Override
 	public boolean isPayDate( Calendar payDate )
 	{
@@ -19,7 +20,7 @@ public class WeeklyPaymentSchedule implements PaymentSchedule
 	public Calendar getPayPeriodStartDate( Calendar payDate )
 	{
 		Calendar monday = (Calendar) payDate.clone( );
-		monday.roll( Calendar.DAY_OF_MONTH, -5 );
+		monday.roll( Calendar.DAY_OF_MONTH, -LENGTH_OF_WEEK );
 		return monday;
 	}
 }

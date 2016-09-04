@@ -4,20 +4,20 @@ package payrollcasestudy.entities.paymentschedule;
 import java.util.Calendar;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * represents the schedule of employees being paid
  */
 public interface PaymentSchedule
 {
 
 	/**
-	 * the paydate for different payment schedule is already hardcoded/predefined
+	 * judges whether employees should be paid on this <code>payDate</code> according to their payment schedule
 	 * @param payDate
 	 * @return whether this day is the payDate
 	 */
 	public boolean isPayDate( Calendar payDate );
 
 	/**
-	 * employees with different payment schedule will have different pay period length. PayPeriodStartDate = payDate - payPeriodLength
+	 * gets the first date of this payment round. PayPeriodStartDate = payDate - payPeriodLength
 	 * @param payDate
 	 * @return the first day in current pay period
 	 */

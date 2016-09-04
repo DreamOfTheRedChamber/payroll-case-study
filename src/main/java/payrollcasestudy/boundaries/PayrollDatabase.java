@@ -8,7 +8,7 @@ import java.util.Set;
 import payrollcasestudy.entities.Employee;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * database which stores employee/member ids to employees mapping
  */
 public class PayrollDatabase
 {

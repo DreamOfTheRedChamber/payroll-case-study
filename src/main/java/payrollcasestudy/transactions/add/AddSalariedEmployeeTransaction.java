@@ -8,7 +8,7 @@ import payrollcasestudy.entities.paymentschedule.MonthlyPaymentSchedule;
 import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
 
 /**
- * Created by zhangshijie on 7/25/16.
+ * transaction that adds a salaried employee to database
  */
 public class AddSalariedEmployeeTransaction extends AddEmployeeTransaction
 {
