@@ -43,9 +43,7 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 ![ServiceChargeTransaction](/images/class-ServiceChargeTransaction.png)
 
 * PaydayTransaction
-<div style="width: 500px">
 ![PaydayTransaction](/images/class-paydaytransaction.png)
-</div>
 
 ## Core Sequence UMLs <a id="core-sequence-UMLs"></a>
 * Main program
