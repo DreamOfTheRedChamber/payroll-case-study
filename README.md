@@ -9,7 +9,7 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 # Overview
   * [Use Cases](#use-case)
   * [Core Class UMLs](#core-class-UMLs)
-  * [Core Sequence UMLS](#core-sequence-UMLs)
+  * [Core Sequence UMLs](#core-sequence-UMLs)
   * [Adopted Design Patterns](#design-patterns)
   * [Package Design](#package-design)
   * [Reference](#reference)
