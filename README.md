@@ -75,10 +75,9 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 ![](/images/designPatterns.png)
 
 ## Package Design <a id="package-design"></a>
-* Implemented package structure
-  * Entities
+#### Entities
 ![](/images/payroll-implemented-entities.png)
-  * Transactions
+#### Transactions
 ![](/images/payroll-implemented-trans-structure.png)
 
 ## Reference<a id="reference"></a>
