@@ -28,14 +28,10 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 ![ChangeEmployeeTransaction1](/images/class-ChangeEmployeeTransaction.png)
 
 * DeleteEmployeeTransaction
-<div style="width: 500px">
 ![DeleteEmployee](/images/class-DeleteEmployeeTransaction-1.png)
-</div>
 
 * TimeCardTransaction
-<div style="width: 500px">
 ![TimeCardTransaction](/images/class-TimeCardTransaction.png)
-</div>
 
 * SalesReceiptTransaction
 ![SalesReceiptTransaction](/images/class-SalesReceiptTransaction.png)
