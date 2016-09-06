@@ -12,7 +12,7 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
   * [Core Sequence UMLs](#core-sequence-UMLs)
   * [Adopted Design Patterns](#design-patterns)
   * [Package Design](#package-design)
-  * [Reference](#reference)
+  * [References](#reference)
 
 ## Use Cases <a id="use-case"></a>
 ![Use case diagram](/images/Payroll-use-case.png)
