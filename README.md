@@ -44,16 +44,16 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 
 * PaydayTransaction
 <div style="width: 500px">
-![](/images/class-paydaytransaction.png)
+![PaydayTransaction](/images/class-paydaytransaction.png)
 </div>
 
 ## Core Sequence UMLs <a id="core-sequence-UMLs"></a>
 * Main program
-![](/images/seq-MainProgram.png)
+![MainProgram](/images/seq-MainProgram.png)
 * PaydayTransaction
-![](/images/seq-PaydayTransaction.png)
+![PaydayTransaction](/images/seq-PaydayTransaction.png)
 * ChangeClassificationTransaction
-![](/images/seq-ChangeClassificationTransaction.png)
+![ChangeMethodTransaction](/images/seq-ChangeClassificationTransaction.png)
 * ChangeMethodTransaction
 ![](/images/seq-ChangeMethodTransaction.png)
 * ChangeAffiliationTransaction
