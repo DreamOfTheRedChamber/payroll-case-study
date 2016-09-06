@@ -35,6 +35,7 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 
 * SalesReceiptTransaction
 ![SalesReceiptTransaction](/images/class-SalesReceiptTransaction.png)
+
 * ServiceChargeTransaction
 ![ServiceChargeTransaction](/images/class-ServiceChargeTransaction.png)
 
@@ -44,20 +45,28 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 ## Core Sequence UMLs <a id="core-sequence-UMLs"></a>
 * Main program
 ![MainProgram](/images/seq-MainProgram.png)
+
 * PaydayTransaction
 ![PaydayTransaction](/images/seq-PaydayTransaction.png)
+
 * ChangeClassificationTransaction
 ![ChangeMethodTransaction](/images/seq-ChangeClassificationTransaction.png)
+
 * ChangeMethodTransaction
 ![](/images/seq-ChangeMethodTransaction.png)
+
 * ChangeAffiliationTransaction
 ![](/images/seq-ChangeAffiliationTransaction.png)
+
 * ServiceChargeTransaction
 ![](/images/seq-ServiceChargeTransaction.png)
+
 * SalesReceiptTransaction
 ![](/images/seq-SalesReceiptTransaction.png)
+
 * TimeCardTransaction
 ![](/images/seq-TimeCardTransaction.png)
+
 * AddEmployeeTransaction
 ![](/images/seq-AddEmployees.png)
 
