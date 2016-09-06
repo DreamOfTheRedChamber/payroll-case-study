@@ -18,10 +18,10 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 ![Use case diagram](/images/Payroll-use-case.png)
 
 ## Core Class UMLs <a id="core-class-UMLs"></a>
-* Employee
+#### Employee
 ![Employee](/images/class-Employee.png)
 
-* AddEmployeeTransaction
+#### AddEmployeeTransaction
 ![AddEmployee](/images/class-AddEmployeeTransaction.png)
 
 * ChangeEmployeeTransaction
