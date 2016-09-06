@@ -24,51 +24,50 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 #### AddEmployeeTransaction
 ![AddEmployee](/images/class-AddEmployeeTransaction.png)
 
-* ChangeEmployeeTransaction
+#### ChangeEmployeeTransaction
 ![ChangeEmployeeTransaction1](/images/class-ChangeEmployeeTransaction.png)
 
-*
-* DeleteEmployeeTransaction
+#### DeleteEmployeeTransaction
 ![DeleteEmployee](/images/class-DeleteEmployeeTransaction-1.png)
 
-* TimeCardTransaction
+#### TimeCardTransaction
 ![TimeCardTransaction](/images/class-TimeCardTransaction.png)
 
-* SalesReceiptTransaction
+#### SalesReceiptTransaction
 ![SalesReceiptTransaction](/images/class-SalesReceiptTransaction.png)
 
-* ServiceChargeTransaction
+#### ServiceChargeTransaction
 ![ServiceChargeTransaction](/images/class-ServiceChargeTransaction.png)
 
-* PaydayTransaction
+#### PaydayTransaction
 ![PaydayTransaction](/images/class-paydaytransaction.png)
 
 ## Core Sequence UMLs <a id="core-sequence-UMLs"></a>
-* Main program
+#### Main program
 ![MainProgram](/images/seq-MainProgram.png)
 
-* PaydayTransaction
+#### PaydayTransaction
 ![PaydayTransaction](/images/seq-PaydayTransaction.png)
 
-* ChangeClassificationTransaction
+#### ChangeClassificationTransaction
 ![ChangeMethodTransaction](/images/seq-ChangeClassificationTransaction.png)
 
-* ChangeMethodTransaction
+#### ChangeMethodTransaction
 ![](/images/seq-ChangeMethodTransaction.png)
 
-* ChangeAffiliationTransaction
+#### ChangeAffiliationTransaction
 ![](/images/seq-ChangeAffiliationTransaction.png)
 
-* ServiceChargeTransaction
+#### ServiceChargeTransaction
 ![](/images/seq-ServiceChargeTransaction.png)
 
-* SalesReceiptTransaction
+#### SalesReceiptTransaction
 ![](/images/seq-SalesReceiptTransaction.png)
 
-* TimeCardTransaction
+#### TimeCardTransaction
 ![](/images/seq-TimeCardTransaction.png)
 
-* AddEmployeeTransaction
+#### AddEmployeeTransaction
 ![](/images/seq-AddEmployees.png)
 
 
