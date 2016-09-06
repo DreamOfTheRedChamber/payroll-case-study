@@ -27,6 +27,7 @@ It is written in Java, using JUnit and Hamcrest for testing, Maven for dependenc
 * ChangeEmployeeTransaction
 ![ChangeEmployeeTransaction1](/images/class-ChangeEmployeeTransaction.png)
 
+*
 * DeleteEmployeeTransaction
 ![DeleteEmployee](/images/class-DeleteEmployeeTransaction-1.png)
 
